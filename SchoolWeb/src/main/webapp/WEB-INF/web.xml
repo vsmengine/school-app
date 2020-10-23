@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<env-entry>
+		<description>application configuration file (full path) that contains properties and values (name=value in each line)</description>
+		<env-entry-name>appConfigFile</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>C:/Data/Softwares/java/sampath/DB_APPS/configs/MiniUniversity.config</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>jdbcClassName</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>org.hsqldb.jdbc.JDBCDriver</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>jdbcConnectionString</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>jdbc:hsqldb:hsql://localhost/school;shutdown=true</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>userName</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>SA</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>password</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value></env-entry-value>
+	</env-entry>
+	
+	<display-name>Archetype Created Web Application</display-name>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>CourseListSvlt</display-name>
+		<servlet-name>CourseListSvlt</servlet-name>
+		<servlet-class>servlets.CourseListSvlt</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CourseListSvlt</servlet-name>
+		<url-pattern>/CourseListSvlt</url-pattern>
+	</servlet-mapping>
+
+</web-app>

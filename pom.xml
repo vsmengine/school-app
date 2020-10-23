@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>lv.minischool</groupId>
+  <artifactId>MiniSchool</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <name>Mini School Web Project</name>
+  <description>Mini School Web Project</description>
+  <modules>
+  	<module>SchoolLogic</module>
+  	<module>TestSchoolLogic</module>
+  	<module>SchoolWeb</module>
+  </modules>
+  
+  <dependencies>
+      <dependency>
+         <groupId>jdbc.drivers</groupId>
+         <artifactId>hsqldb</artifactId>
+         <version>1.0</version>
+      </dependency>
+  </dependencies>  
+</project>

@@ -1,0 +1,1 @@
+jdbc:oracle:thin:school/s@localhost:1521:edu

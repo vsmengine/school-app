@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<context-param>
+		<param-name>LAIKS...</param-name>
+		<param-value>LABS...</param-value>
+	</context-param>
+	<env-entry>
+		<env-entry-name>jdbcClassName</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>oracle.jdbc.driver.OracleDriver</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>jdbcConnectionString</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>jdbc:oracle:thin:school/s@GUNTARS-PC:1521:gun</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>userName</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>school</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>password</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>s</env-entry-value>
+	</env-entry>
+	<listener>
+		<listener-class>school.web.listeners.SessionCounterListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>school.web.listeners.ApplicationContextAttributeListener</listener-class>
+	</listener>
+	<display-name>SchoolWeb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
