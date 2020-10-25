@@ -3,19 +3,23 @@
     
 <%@page import="java.util.ArrayList"%>
 <%@page import="logicHandlers.Course"%>
+<%@page import="listners.SessionCntListnr"%>
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="jquery/jquery.3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<title>MiniSchool Course List</title>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="jquery/jquery.3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title>MiniSchool Course List</title>
 </head>
 <body>
-	<h1>Course List:</h1>
+	<%="session count: "  + SessionCntListnr.getTotalActiveSession() %>
 	<hr/>
+	<h1>Kursu liste:</h1>
+	<hr/>
+	<a href="CourseEdit.jsp?oper=create">Add new course...</a>
 	<table class="table table-striped" >
 		<tr>
 			<th>Course id</th>

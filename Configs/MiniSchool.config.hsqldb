@@ -1,0 +1,5 @@
+jdbcClassName=org.hsqldb.jdbc.JDBCDriver
+jdbcConnectionString=jdbc:hsqldb:hsql://localhost/school;shutdown=true
+dbUserName=SA
+dbPassword=
+
